@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+#heading{
+    display: flex;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#heading i{
+    margin-left: 650px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#items{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 60px;
+}
+#items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#items a:hover{
+    text-decoration: underline;
+}
+#open{
+    font-style: italic;
+}
+#preference{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    position: sticky;
+    top: 98px;
+}
+.choose{
+    width: 50%;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+#container{
+    display: flex;
+    position: sticky;
+    top: 150px;
+}
+#background{
+    height: 74vh;
+    background-image: url('https://cdn.mos.cms.futurecdn.net/X5TyA8uvkGXoNyjFzxcowS-1200-80.jpg');
+}
+#windows{
+    display: none;
+}
+#sec1-windows{
+    display: flex;
+    background-color: black;
+}
+#sec1-windows-content{
+    color: rgb(204, 202, 202);
+}
+#sec1-windows-content h1{
+    padding: 10px;
+}
+#sec1-windows-content p{
+    padding: 10px;
+}
+#sec1-windows-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+}
+#mac{
+    display: none;
+}
+#sec1-mac{
+    display: flex;
+    background-color: black;
+}
+#sec1-mac-content{
+    color: rgb(204, 202, 202);
+}
+#sec1-mac-content h1{
+    padding: 10px;
+}
+#sec1-mac-content p{
+    padding: 10px;
+}
+#sec1-mac-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+}
+@media screen and (max-width:900px){
+    #items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    #heading i{
+        margin: 0;
+    }
+    #sec1-mac{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sec1-windows{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

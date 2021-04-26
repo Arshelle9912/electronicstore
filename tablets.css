@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+#heading{
+    display: flex;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#heading i{
+    margin-left: 650px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#items{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 60px;
+}
+#items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#items a:hover{
+    text-decoration: underline;
+}
+#open{
+    font-style: italic;
+}
+#preference{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    position: sticky;
+    top: 98px;
+}
+.choose{
+    width: 50%;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+#android-ipad{
+    display: flex;
+    position: sticky;
+    top: 141px;
+}
+#android{
+    display: none;
+}
+#ipad{
+    display: none;
+}
+#background{
+    height: 74vh;
+    background-image: url('https://previews.123rf.com/images/sparkdesign/sparkdesign1211/sparkdesign121100027/16524630-tablet-device-background.jpg');
+}
+#sec1-android{
+    display: flex;
+    background-color: black;
+}
+#sec1-android-content{
+    color: rgb(204, 202, 202);
+}
+#sec1-android-content h1{
+    padding: 10px;
+}
+#sec1-android-content p{
+    padding: 10px;
+}
+#sec1-android-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+}
+#sec1-ipad{
+    display: flex;
+    background-color: black;
+}
+#sec1-ipad-content{
+    color: rgb(204, 202, 202);
+}
+#sec1-ipad-content h1{
+    padding: 10px;
+}
+#sec1-ipad-content p{
+    padding: 10px;
+}
+#sec1-ipad-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+}
+@media screen and (max-width:900px){
+    #items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    #heading i{
+        margin: 0;
+    }
+    #sec1-ipad{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sec1-android{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #preference{
+        top: 150px;
+    }
+    #android-ipad{
+        top: 190px;
+    }
+}

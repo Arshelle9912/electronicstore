@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablets</title>
+    <link rel="stylesheet" href="tablets.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div id="heading">
+        <i class="fas fa-tablet"></i>
+        <h1>Tablets</h1>
+    </div>
+    <div id="items">
+        <a href="electronics.html">Home Page</a>
+        <a href="phones.html">Phones</a>
+        <a href="laptops.html">Laptops</a>
+        <a href="tablets.html" id="open">Tablets</a>
+    </div>
+    <div id="preference"><p>Choose between Android and iPad-:</p></div>
+    <div id="android-ipad">
+        <button onclick="android()" class="choose">Android</button>
+        <button onclick="ipad()" class="choose">iPad</button>
+    </div>
+    <div id="android">
+        <div id="sec1-android">
+            <img src="https://cdn.mos.cms.futurecdn.net/Jmrz3TezxjxfeTmh4gLaNL.jpg" alt="Samsung S7" height="530" width="1100">
+            <div id="sec1-android-content">
+                <h1>Samsung Tab S7</h1>
+                <h1>The most advanced Galaxy Tab<br>changes how you work and play</h1>
+                <p>Meet Galaxy Tab S7 and S7+. Work and play on<br> the ultra smooth 120Hz display,
+                    powered by our<br> most powerful chipset. Get a PC-like experience<br> with the snap
+                    of a keyboard, or use the ultra low<br> latency S Pen to write like never before.
+                    An<br> immersive tablet experience changing the way<br> you work and play</p>
+                <p>Price starts from <strong>₹79999</strong></p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="ipad">
+        <div id="sec1-ipad">
+            <img src="https://9to5mac.com/wp-content/uploads/sites/6/2022/04/iPad-Pro-M1-2021-.png?w=1600" alt="iPad pro" height="530" width="1100">
+            <div id="sec1-ipad-content">
+                <h1>iPad Pro</h1>
+                <h1>Liquid Retina XDR display.</h1>
+                <h1>Best and brightest.</h1>
+                <p>Extreme dynamic range comes to the 12.9-inch iPad Pro.2<br> The Liquid Retina XDR display
+                     delivers true-to-life detail<br> with a 10,00,000:1 contrast ratio, great for viewing
+                      and<br> editing HDR photos and videos or enjoying your favourite<br> movies and TV shows.
+                       It also features a breathtaking<br> 1,000 nits of full‑screen brightness and 1,600
+                        nits of <br>peak brightness. And advanced display technologies <br>like P3 wide colour,
+                         True Tone and ProMotion.</p>
+                <p>Price starts from <strong>₹71900</strong></p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="background"></div>
+
+    <script>
+        let a=document.getElementById("background");
+        let b=document.getElementById("android")
+        let c=document.getElementById("ipad")
+        function android(){
+            a.style.display="none"
+            b.style.display="block"
+            c.style.display="none"
+        }
+        function ipad(){
+            a.style.display="none"
+            b.style.display="none"
+            c.style.display="block"
+        }
+    </script>
+</body>
+</html>

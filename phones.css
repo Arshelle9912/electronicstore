@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+#heading{
+    display: flex;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#heading i{
+    margin-left: 650px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#items{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 60px;
+}
+#items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#items a:hover{
+    text-decoration: underline;
+}
+#open{
+    font-style: italic;
+}
+#preference{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    position: sticky;
+    top: 98px;
+}
+.choose{
+    width: 50%;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+#android-iphone{
+    display: flex;
+    position: sticky;
+    top: 141px;
+}
+
+#background{
+    height: 73.5vh;
+    background-image: url('https://cdn.vox-cdn.com/thumbor/LwK_ZOZAJ9pWvpp_4tep7Iu6WKU=/0x0:2040x1150/1200x675/filters:focal(857x412:1183x738)/cdn.vox-cdn.com/uploads/chorus_image/image/68490964/Best_Phone_Grid_2021_2.5.png');
+}
+#android{
+    display: none;
+}
+#iphone{
+    display: none;
+}
+#sec1{
+    display: flex;
+    background-color: black;
+}
+#sec1-content{
+    color: rgb(204, 202, 202);
+}
+#sec1-content h1{
+    padding: 10px;
+}
+#sec1-content p{
+    padding: 10px;
+}
+#sec1-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+}
+#sec2{
+    display: flex;
+    background-color: black;
+    margin-top: 10px;
+}
+#sec2-content{
+    color: rgb(204, 202, 202);
+}
+#sec2-content h1{
+    padding: 10px;
+}
+#sec2-content p{
+    padding: 10px;
+}
+#sec2-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+}
+#sec1-iphone{
+    display: flex;
+    background-color: black;
+    color: rgb(204, 202, 202);
+}
+#sec1-iphone-content h1{
+    padding: 20px;
+}
+#sec1-iphone-content p{
+    padding: 20px;
+}
+#sec1-iphone-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+    margin: 20px;
+}
+#sec2-iphone{
+    display: flex;
+    margin-top: 10px;
+    background-color: black;
+    color: rgb(204, 202, 202);
+}
+#sec2-iphone-content h1{
+    padding: 20px;
+}
+#sec2-iphone-content p{
+    padding: 20px;
+}
+#sec2-iphone-content button{
+    padding: 5px;
+    color: rgb(204, 202, 202);
+    background-color: black;
+    margin: 20px;
+}
+@media screen and (max-width:900px){
+    #items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    #heading i{
+        margin: 0;
+    }
+    #sec1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sec2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sec1-iphone{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sec2-iphone{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #preference{
+        top: 150px;
+    }
+    #android-iphone{
+        top: 190px;
+    }
+}

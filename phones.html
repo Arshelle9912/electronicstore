@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" href="phones.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div id="heading">
+        <i class="fas fa-mobile"></i>
+        <h1>Phones</h1>
+    </div>
+    <div id="items">
+        <a href="electronics.html">Home Page</a>
+        <a href="phones.html" id="open">Phones</a>
+        <a href="laptops.html">Laptops</a>
+        <a href="tablets.html">Tablets</a>
+    </div>
+    <div id="main-body">
+        <div id="preference"><p>Choose between Android and Iphone-:</p></div>
+        <div id="android-iphone">
+            <button onclick="android()" class="choose">Android</button>
+            <button onclick="iphone()" class="choose">Iphone</button>
+        </div>  
+        <div id="android">
+            <div id="sec1">
+                <img src="//images.samsung.com/in/smartphones/galaxy-s21/buy/s21_ultra_basicgroup_kv_pc_img.jpg?imwidth=768" alt="Samsung S21">
+                <div id="sec1-content">
+                    <h1>Epic in every way</h1>
+                    <p>Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a 
+                        revolution in photography — letting you capture cinematic 8K video and snap epic stills, 
+                        all in one go. And with Galaxy's fastest chipset, strongest glass, 5G and an all-day 
+                        battery, Ultra easily lives up to its name.</p>
+                    <p>Price start from <strong>₹104999</strong></p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div id="sec2">
+                <img src="https://www.91-cdn.com/hub/wp-content/uploads/2021/03/OnePlus-9.jpeg" alt="Oneplus 9 pro" height="350" width="1080">
+                <div id="sec2-content">
+                    <h1>Oneplus 9 pro</h1>
+                    <h1>Your Best Shot</h1>
+                    
+                    <p>Co-developed with Hasselblad, the exclusive <br>Hasselblad Camera for Mobile delivers 
+                        multiple <br>breakthroughs including Natural Color Calibration.<br> The ultra-flagship camera 
+                        blends the technological<br> excellence of OnePlus and the legacy of Hasselblad. With the <br>
+                        OnePlus 9 Pro, taking Your Best Shot is now effortless.</p>
+                    <p>From ₹64999</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="iphone">
+            <div id="sec1-iphone">
+                <img src="https://fdn.gsmarena.com/imgroot/reviews/20/apple-iphone-12-pro-max/lifestyle/-1200w5/gsmarena_008.jpg" alt="Iphone 12 Pro Max" height="500" width="1100">
+                <div id="sec1-iphone-content">
+                    <h1>Iphone 12 pro max</h1>
+                    <h1>Blast past fast.</h1>
+                    <p>5G goes Pro. A14 Bionic rockets past every other<br> smartphone chip. The Pro camera 
+                        system takes low-light<br> photography to the next level — with an even bigger jump<br> on 
+                        iPhone 12 Pro Max. And Ceramic Shield delivers four <br>times better drop performance. Let’s see what 
+                        this thing can do.</p>
+                    <p>Price starts from <strong>₹129999</strong></p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div id="sec2-iphone">
+                <img src="https://images.macrumors.com/article-new/2019/10/iphone12design.jpg" alt="Iphone 12" height="500" width="1100">
+                <div id="sec2-iphone-content">
+                    <h1>Iphone 12</h1>
+                    <h1>Blast Past Fast.</h1>
+                    <p>5G speed. A14 Bionic, the fastest chip in a smartphone.<br>
+                        An edge-to-edge OLED display. Ceramic Shield with four<br> times better drop
+                         performance. And Night mode on every<br> camera. iPhone 12 has it all — in
+                          two perfect sizes.</p>
+                    <p>Price starts from ₹79999</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+            
+        </div>  
+        <div id="background"></div>
+    </div>
+    <script>
+        let a=document.getElementById("background");
+        let b=document.getElementById("android")
+        let c=document.getElementById("iphone")
+        function android(){
+            a.style.display="none"
+            b.style.display="block"
+            c.style.display="none"
+        }
+        function iphone(){
+            a.style.display="none"
+            b.style.display="none"
+            c.style.display="block"
+        }
+    </script>
+</body>
+</html>
